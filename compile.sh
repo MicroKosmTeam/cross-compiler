@@ -4,10 +4,10 @@ set -ex
 
 # Compiler Configuration
 CROSS_TARGET="${1:-x86_64-elf}"
-GCC_VERSION="13.1.0" # GCC version
-BIN_VERSION="2.40"  # Binutils version
-MPF_VERSION="4.2.0" # MPFR version
-GMP_VERSION="6.2.1" # GMP version
+GCC_VERSION="13.2.0" # GCC version
+BIN_VERSION="2.42"  # Binutils version
+MPF_VERSION="4.2.1" # MPFR version
+GMP_VERSION="6.3.0" # GMP version
 MPC_VERSION="1.3.1" # MPC version
 
 # Build Configuration
@@ -20,10 +20,6 @@ BIN_PKG_NAME="binutils-$BIN_VERSION"
 MPF_PKG_NAME="mpfr-$MPF_VERSION"
 GMP_PKG_NAME="gmp-$GMP_VERSION"
 MPC_PKG_NAME="mpc-$MPC_VERSION"
-LHD_PKG_NAME="linux-$LHD_VERSION"
-GLC_PKG_NAME="glibc-$GLC_VERSION"
-KMD_PKG_NAME="kmod-$KMD_VERSION"
-SSL_PKG_NAME="openssl-$SSL_VERSION"
 
 GCC_SRC="https://ftp.gnu.org/gnu/gcc/$GCC_PKG_NAME/$GCC_PKG_NAME.tar.gz" # GCC download link
 BIN_SRC="https://ftp.gnu.org/gnu/binutils/$BIN_PKG_NAME.tar.gz"          # Binutils download link
